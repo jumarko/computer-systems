@@ -14,4 +14,10 @@ int main() {
   unsigned u = 4294967295u; // UMax
   int tu = (int) u;
   printf("u = %u, tu = %d\n", u, tu);
+
+  // page 111 - formatting: printf doesn't take any type information into consideration!!
+  int x = -1;
+  unsigned int un = 2147483638; // 2^31
+  printf("x = %u = %d\n", x, x);
+  printf("x = %u = %d\n", un, un);
 }
